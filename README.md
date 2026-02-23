@@ -1,110 +1,127 @@
-# 🚀 Project Name
-
-> One line powerful tagline about your project  
-> Example: “AI-powered healthcare triage system for smarter patient flow.”
+# 🏥 MedBridge  
+### AI Powered Smart Healthcare Triage System  
 
 ---
 
-## 🎯 Problem Statement
+## 📌 Overview  
 
-Briefly explain:
-- What real-world problem you are solving
-- Why it matters
-- Who is affected
+**MedBridge** is an AI-powered healthcare triage web application designed to reduce hospital overcrowding by intelligently assessing patient symptoms and recommending the most suitable hospital based on severity and real-time crowd levels.
 
----
-
-## 💡 Our Solution
-
-Explain:
-- What your system does
-- How it solves the problem
-- What makes it unique
+This project was built as a hackathon prototype to demonstrate how AI-driven triage and smart hospital ranking can improve patient flow and reduce unnecessary emergency visits.
 
 ---
 
-## ✨ Key Features
+## 🎯 Problem Statement  
 
-- 🔍 Feature 1
-- 🤖 AI-based feature
-- 📊 Real-time analytics
-- 🔐 Secure authentication
-- 📱 Responsive UI
+Hospitals today face:
 
----
+- 🚑 Emergency room overcrowding  
+- ⏳ Long patient waiting times  
+- 🏥 Unnecessary hospital visits  
+- 📊 Poor visibility into hospital crowd levels  
 
-## 🧠 Tech Stack
-
-### Frontend
-- React / HTML / CSS / Tailwind
-
-### Backend
-- Node.js / Express / Django
-
-### Database
-- MongoDB / MySQL / Firebase
-
-### AI / Tools
-- Python
-- OpenAI API
-- Google Cloud / Google Maps API
+These issues delay treatment for critical patients and increase system stress.
 
 ---
 
-## 🏗️ System Architecture
+## 💡 Our Solution  
 
-(Add architecture diagram image here)
+MedBridge introduces:
 
-```
-User → Frontend → Backend → AI Engine → Database → Response
-```
+- 🤖 AI-based smart symptom triage  
+- 📊 Hospital crowd-based ranking (prototype logic)  
+- 🏥 ICU-priority filtering for critical patients  
+- 🎯 Smart recommendations:
+  - 🟢 Home Care  
+  - 🟡 Visit Doctor  
+  - 🔴 Emergency Required  
 
----
-
-## ⚙️ How It Works
-
-1. User logs in
-2. Enters required data
-3. AI processes information
-4. System generates result
-5. Dashboard displays insights
+The system ensures high-risk patients are prioritized while low-risk cases are guided properly.
 
 ---
 
-## 📸 Screenshots
+## 🚀 Core Features  
 
-(Add images of your UI here)
+### 🟦 1. Smart Symptom Input  
 
----
+- Patient Name  
+- Age  
+- Symptoms  
+- Duration  
+- Severity Slider (1–10)  
 
-## 📦 Installation & Setup
-
-```bash
-git clone https://github.com/yourusername/project-name.git
-cd project-name
-npm install
-npm start
-```
+Data is sent to backend for evaluation.
 
 ---
 
-## 🌍 Future Scope
+### 🟨 2. AI Risk Assessment  
 
-- 📱 Mobile app integration
-- 🌐 Multi-language support
-- 📊 Advanced analytics dashboard
-- 🔗 API integration with hospitals
+| Severity Score | Risk Level | Suggested Action |
+|---------------|------------|-----------------|
+| 1 – 4         | 🟢 Low      | Home Care |
+| 5 – 7         | 🟡 Moderate | Visit Doctor |
+| 8 – 10        | 🔴 High     | Emergency Required |
+
+Includes:
+
+- Color-coded risk indicator  
+- AI-generated medical summary  
+- Alert for high-risk cases  
 
 ---
 
-## 👥 Team
+### 🟥 3. Smart Hospital Ranking  
 
-- Sambhav Kumar – Developer
-- Team Member 2 – UI/UX
-- Team Member 3 – Backend
+Hospitals are ranked based on:
+
+- Crowd Level  
+- ICU Availability  
+- Available Beds  
+- Waiting Time  
+- Distance  
+- Rating  
+
+**Prototype Smart Logic:**
+
+- If Severity > 7 → ICU Available + Low Crowd First  
+- If Severity ≤ 7 → Nearest Low/Medium Crowd Hospitals  
 
 ---
 
-## 📜 License
+### 🏥 4. Mock Dataset  
 
-This project is licensed under the MIT License.
+- 25 Hospitals (Noida & Greater Noida)  
+- 30 Symptom Cases  
+- Crowd Status: Low / Medium / High  
+- ICU Availability  
+- Waiting Time  
+- Distance (Mock Data)  
+
+---
+
+### 📊 5. Bonus Features  
+
+- 📈 Crowd Analytics Bar Chart  
+- 🟢🟡🔴 Risk Indicator Meter  
+- ⏳ Loading Animation before AI result  
+
+---
+
+## 🛠️ Tech Stack  
+
+### Frontend  
+- React.js  
+- React Router  
+- Tailwind CSS  
+
+### Backend  
+- Node.js  
+- Express.js  
+
+### Database  
+- Mock JSON Dataset (Supabase-ready structure)  
+
+---
+
+## 📂 Project Structure  
+
